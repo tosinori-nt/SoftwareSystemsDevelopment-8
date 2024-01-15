@@ -59,7 +59,7 @@ async function getItem(id) {
             acc(
                 rows.map(item =>
                     Object.assign({}, item, {
-                        completed: item.completed === 1,
+                        completed: item.completed == 1,
                     }),
                 )[0],
             );
